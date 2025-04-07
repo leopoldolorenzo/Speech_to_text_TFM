@@ -1,0 +1,64 @@
+# === ENTORNOS ===
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# === MODELOS PESADOS ===
+models/*
+!models/base/  # permite base si es ligero
+
+# === AUDIOS ===
+audios/**/*.wav
+*.mp3  # ignora archivos de audio mp3
+
+# === LOGITS y SALIDAS ===
+outputs/**
+results/**/*.csv
+
+# === LENGUAJE Y CORPUS ===
+data/lm/*.txt
+data/lm/*.arpa
+data/lm/*.bin
+
+# === ARCHIVOS BINARIOS O GRANDES ===
+*.npy
+*.bin
+*.pt
+*.pkl
+*.zip
+*.gz
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.lz
+*.tar.lzma
+*.tar.zst
+*.tar.lzo
+*.tar.lzop
+*.tar.lz4
+*.tar.lzma2
+*.tar.lz4c      
+*.tar.lzop2
+*.tar.lzop3
+*.tar.lzop4 
+*.tar.lzop5
+*.tar.lzop6
+*.tar.lzop7
+*.tar.lzop8
+*.tar.lzop9
+*.tar.lzop10            
+*.tar.lzop11
+
+# === DATASETS CACHE / ARROW FILES (Hugging Face, etc.) ===
+*.arrow
+**/*.arrow
+data/**/cache-*
+
+
+# === MODELOS ENTRENADOS ===
+training/**/checkpoint-*/model.safetensors
+*.safetensors
+*.ckpt
+*.ckpt.*
