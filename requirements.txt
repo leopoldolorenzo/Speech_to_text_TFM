@@ -128,6 +128,7 @@ sortedcontainers==2.4.0
 soundfile @ file:///home/conda/feedstock_root/build_artifacts/pysoundfile_1737836266465/work
 starlette @ file:///home/conda/feedstock_root/build_artifacts/starlette_1741450612959/work
 sympy @ file:///croot/sympy_1738108488918/work
+tabulate @ file:///home/conda/feedstock_root/build_artifacts/tabulate_1733589744265/work
 tensorboard @ file:///home/conda/feedstock_root/build_artifacts/tensorboard_1740522445235/work/tensorboard-2.19.0-py3-none-any.whl#sha256=5e71b98663a641a7ce8a6e70b0be8e1a4c0c45d48760b076383ac4755c35b9a0
 tensorboard_data_server @ file:///home/conda/feedstock_root/build_artifacts/tensorboard-data-server_1728639716925/work/tensorboard_data_server-0.7.0-py3-none-manylinux2014_x86_64.whl#sha256=a9e810807f394a98b62699603d2070bd51f04159295d8a158fb17145b7ff0564
 text-unidecode @ file:///home/conda/feedstock_root/build_artifacts/text-unidecode_1733749896243/work

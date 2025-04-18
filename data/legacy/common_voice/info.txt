@@ -1,0 +1,4 @@
+Dataset: mozilla-foundation/common_voice_13_0
+Language: es
+Train samples: 236829
+Test samples: 59208
