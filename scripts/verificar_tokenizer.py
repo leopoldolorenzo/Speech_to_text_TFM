@@ -6,7 +6,7 @@ from transformers import Wav2Vec2Processor, Wav2Vec2ForCTC
 
 # === Configuración ===
 TOKENIZER_DIR = "models/tokenizer_v1_nospecial"
-MODEL_PATH = "models/fine_tune_01"  # Cambia si usas otro modelo
+MODEL_PATH = "models/fine_tune_02"  # Cambia si usas otro modelo
 
 print(f"📦 Cargando processor desde: {TOKENIZER_DIR}")
 processor = Wav2Vec2Processor.from_pretrained(TOKENIZER_DIR)

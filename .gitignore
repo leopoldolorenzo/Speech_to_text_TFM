@@ -75,3 +75,6 @@ Thumbs.db
 *.hdf5
 *.hdf
 
+# Ignorar archivos TSV grandes del corpus
+data/common_voice_es/es/*.tsv
+

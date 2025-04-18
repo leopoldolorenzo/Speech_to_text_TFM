@@ -7,7 +7,7 @@ from collections import Counter
 import os
 
 # === Configuración ===
-DATASET_PATH = "data/common_voice_es/es/fine_tune_01/dataset_hf"
+DATASET_PATH = "data/common_voice_es/es/fine_tune_02/dataset_hf"
 TOKENIZER_DIR = "models/tokenizer_v1_nospecial"
 
 # === Cargar tokenizer y dataset
@@ -40,3 +40,7 @@ extra = tokens_relevantes - caracteres_unicos
 
 print("\n🚨 Caracteres en el dataset que NO están en el vocabulario:", sorted(faltantes))
 print("📎 Tokens en el vocabulario que NO aparecen en el dataset:", sorted(extra))
+
+print("\n📈 Caracteres más frecuentes en el dataset:")
+print(caracteres_dataset.most_common(20))
+

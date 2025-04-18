@@ -6,8 +6,8 @@ import torchaudio
 from datasets import load_from_disk
 from tqdm import tqdm
 
-DATASET_DIR = "data/common_voice_es/es/fine_tune_01/dataset_hf"
-CLIPS_DIR = "data/common_voice_es/es/fine_tune_01/clips_wav"  # Base de los audios
+DATASET_DIR = "data/common_voice_es/es/fine_tune_02/dataset_hf"
+CLIPS_DIR = "data/common_voice_es/es/fine_tune_02/clips_wav"  # Base de los audios
 TARGET_SR = 16000
 
 print(f"🔍 Cargando dataset desde: {DATASET_DIR}")

@@ -8,7 +8,7 @@ from transformers import Wav2Vec2Processor
 
 # === RUTAS ===
 TOKENIZER_PATH = "models/tokenizer_v1_nospecial"
-ARPA_PATH = "data/lm/modelo_limpio.arpa"
+ARPA_PATH = "data/lm/modelo_finetune.arpa"
 
 # === 1. Cargar el processor (tokenizer)
 print(f"📦 Cargando tokenizer desde: {TOKENIZER_PATH}")
