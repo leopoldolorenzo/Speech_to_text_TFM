@@ -1,80 +1,88 @@
-# ====================================
-# 🌱 ENTORNOS Y ARCHIVOS TEMPORALES
-# ====================================
-.env
-.venv/
-__pycache__/
-*.pyc
+# ========================================
+# 🚫 Ignorar modelos, checkpoints, binarios
+# ========================================
+models/
+training/
+logs/
+*.pt
+*.bin
+*.ckpt
+*.safetensors
 
-# ====================================
-# 🤖 MODELOS PESADOS
-# ====================================
-models/*
-!models/base/  # Solo permitimos subir los tokenizer o configs de modelos base
-
-# ====================================
-# 🔊 ARCHIVOS DE AUDIO
-# ====================================
+# ========================================
+# 🚫 Ignorar datasets y audios
+# ========================================
+data/
+audios/
+notebooks/*.mp3
+notebooks/*.wav
+tmp/
 *.wav
 *.mp3
+*.flac
 
-# ====================================
-# 📈 LOGITS, SALIDAS Y RESULTADOS
-# ====================================
-outputs/**
-results/**/*.csv
+# ========================================
+# 🚫 Ignorar corpus y archivos de texto pesados
+# ========================================
+*.txt
+!README.md
+!requirements.txt
+!environment.yml
+!package.json
+!package-lock.json
 
-# ====================================
-# 📚 MODELO DE LENGUAJE Y CORPUS
-# ====================================
-data/lm/*.txt
-data/lm/*.arpa
-data/lm/*.bin
-
-# ====================================
-# 🧠 BINARIOS Y PESOS DE MODELOS
-# ====================================
-*.npy
-*.bin
-*.pt
-*.pkl
-*.safetensors
-*.ckpt*
-*.zip
-*.gz
-*.tar*
-*.lz*
-
-# ====================================
-# 💾 CACHÉS Y TEMPORALES DE DATASETS
-# ====================================
-*.arrow
-**/*.arrow
-data/**/cache-*
-
-# ====================================
-# 🏋️ CHECKPOINTS DE ENTRENAMIENTO
-# ====================================
-training/**/checkpoint-*/model.safetensors
-training/**/checkpoint-*
-
-# ====================================
-# 💬 ARCHIVOS OPCIONALES
-# ====================================
-.DS_Store
-Thumbs.db
+# ========================================
+# 🚫 Ignorar salidas, resultados y logs
+# ========================================
+results/
 *.log
 *.json
-*.yaml
-*.yml
-*.pickle
-*.pkl
-*.pickle
-*.pkl
-*.h5
-*.hdf5
-*.hdf
+*.csv
+*.xml
+*.srt
+*.vtt
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
+*.out
 
-# Ignorar archivos TSV grandes del corpus
-data/common_voice_es/es/*.tsv
+# ========================================
+# 🚫 Ignorar entornos virtuales y dependencias locales
+# ========================================
+.env
+venv/
+env/
+asr_env/
+node_modules/
+frontend/node_modules/
 
+# ========================================
+# 🚫 Ignorar compilados e intermedios
+# ========================================
+__pycache__/
+*.pyc
+*.pyo
+*.so
+
+# ========================================
+# 🚫 Ignorar IDE y sistema
+# ========================================
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ========================================
+# ✅ Permitir archivos clave
+# ========================================
+!.gitignore
+!*.py
+!*.sh
+!*.ipynb
+!backend/**
+!frontend/src/**
+!scripts/**
+!tools/**
